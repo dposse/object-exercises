@@ -27,4 +27,7 @@ function getAllKeys(obj) {
 
 function getAllKeys(obj){
   // your code here
+
+  return Object.getOwnPropertyNames(obj);
+
 }
