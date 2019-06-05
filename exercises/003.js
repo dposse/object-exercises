@@ -22,4 +22,14 @@ Starter Code:
 function fromListToObject(array) {
   // your code here
 
+  let obj = {};
+
+  for (let i=0; i<array.length; i++) {
+
+      obj[array[i][0]] = array[i][1];
+
+  } //end for
+
+  return obj;
+
 }
