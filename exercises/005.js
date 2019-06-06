@@ -26,5 +26,28 @@ Starter Code :
 
 function transformEmployeeData(array) {
   // your code here
+  return array.map( item => {
+
+    console.log(item);
+    return item.reduce( (obj,pair) => {
+
+        console.log(pair);
+
+        obj[pair[0]] = pair[1];
+
+        return obj;
+
+    },{});
+
+  });
 
 }
+
+console.log(transformEmployeeData([
+    [
+        ['firstName', 'Joe'], ['lastName', 'Blow'], ['age', 42], ['role', 'clerk']
+    ],
+    [
+        ['firstName', 'Mary'], ['lastName', 'Jenkins'], ['age', 36], ['role', 'manager']
+    ]
+]));
